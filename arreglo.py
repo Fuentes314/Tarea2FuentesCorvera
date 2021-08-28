@@ -1,4 +1,5 @@
 import math
+import time
 import argparse
 import threading
 # Librería para dividir la cantidad de hilos.
@@ -33,6 +34,7 @@ def split_list(a_list):
 
 def potencia(lista):
     for i in range(0, len(lista)):
+        #time.sleep(0.0001)
         lista[i] = pow(lista[i], 2)
     return lista
 
